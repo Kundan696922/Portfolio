@@ -316,3 +316,15 @@ footer i {
     text-align: center;
   }
 }
+
+button, .button {
+  border: none;
+  cursor: pointer;
+  background-color: #10db79;
+  color:var(--main-white);
+  border-radius: 2rem;
+  font-weight: 500;
+  margin: 50px 0px 0px;
+  padding: 14px 60px;
+  transition: filter 0.25s;
+}
