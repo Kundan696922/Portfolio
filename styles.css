@@ -30,31 +30,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-
-
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* 18px */
@@ -111,15 +86,6 @@ img {
   margin-right: 2rem;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
 
 .nav-list a {
   display: block;
@@ -165,11 +131,6 @@ img {
   border-bottom: 0.2rem solid var(--main-white);
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
 
 /* "Automagic" image grid using no media queries */
 .projects-grid {
@@ -182,15 +143,7 @@ img {
   margin-bottom: 6rem;
 }
 
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .project {
   background: var(--main-gray);
@@ -262,11 +215,6 @@ img {
   font-size: 6rem;
 }
 
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-}
 
 .contact-section-header > p {
   font-style: italic;
@@ -310,12 +258,6 @@ footer i {
   vertical-align: middle;
 }
 
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 button, .button {
   border: none;
