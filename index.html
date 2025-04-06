@@ -1,55 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Portfolio/responsive.css">
-  </head>
-  <body>
-    <!-- START NAV -->
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kundan Goyary</title>
+</head>
+<body>
+    <header></header>
+    <main>
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#message">Message</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
+    <section id="home" class="home">
+        <h1 class="home-content">Hey Iam <span class="name">Kundan</span></h1>
+        <p class="home-content">A <span class="designation">Front-End</span> Developer</p>
+        <img src="/images/my_dp.png" class="dp" alt="My_DP">
+        <a href="/images/My_CV.pdf" target="_blank" class="button">resume</a>
+        <h2 class="skills">Skills:
+          
+          <i class="fa-brands fa-html5" class="home-icon"></i> 
+          <i class="fa-brands fa-css3-alt" class="home-icon"></i>
+          <i class="fa-brands fa-js" class="home-icon"></i>
+          <i class="fa-solid fa-code" class="home-icon"></i>
+          <i class="fa-solid fa-database" class="home-icon"></i>
+          <i class="fa-brands fa-python" class="home-icon"></i>
 
-    <!-- END NAV -->
+        </h2>
 
-    <!-- START WELCOME SECTION -->
-
-    <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Kundan</h1>
-      <p>A front-end developer</p> 
-      <a href="My_CV.pdf" class="button" target="_blank">Resume</a>
     </section>
+    <section id="about" class="about">
+        <h2 class="about-me">About <span class="me">Me</span></h2>
+        <p class="about-content">
+            I'm a passionate front-end developer with a keen interest in creating visually appealing and user-friendly web interfaces. I enjoy bringing designs to life and constantly learning new technologies to enhance my development skills. Besides coding, I love exploring new games and watching movies. Gaming helps me develop problem-solving skills and think creatively, while movies provide a great source of inspiration and relaxation after a day of coding.
+        </p>
+    </section>
+    <section id="experience" class="experience">
+        <h2 class="timeline-title">Experience</h2>
+        <h3 class="my-timeline">My Work Experience</h3>
+    <div class="timeline-container">
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 2024 - July 2024</div>
+        <div class="timeline-content">
+          <img src="/images/codtech_logo.jpeg" alt="codtech_logo" class="timeline-logo"><h4 class="company-name">CODTECH IT SOLUTIONS</h4>
+          <p>Worked as a Front-End Developer, building responsive websites using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
 
-    <!-- END WELCOME SECTION -->
-
-    <!-- START PROJECTS SECTION -->
-
-    <section id="projects" class="projects-section">
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jun 2023 - July 2023</div>
+        <div class="timeline-content">
+          <img src="/images/nielit_guwahati_logo.jpeg" alt="nielit_logo" class="timeline-logo"><h4 class="company-name">NIELIT Guwahati</h4>
+          <p>Completed 200-hour course on programming and ML using Python, with hands-on experience in key libraries.</p>
+        </div>
+      </div>
+    </div>      
+    </section>
+    <section id="projects" class="projects">
       <h2 class="projects-section-header">These are some of my projects</h2>
 
       <div class="projects-grid">
@@ -60,7 +85,7 @@
         >
           <img
             class="project-image"
-            src="customer_satisfactory.png"
+            src="/images/customer_satisfactory.png"
             alt="project"
           />
           <p class="project-title">
@@ -76,7 +101,7 @@
         >
           <img
             class="project-image"
-            src="product_landing.png"
+            src="/images/product_landing.png"
             alt="project"
           />
           <p class="project-title">
@@ -92,7 +117,7 @@
         >
           <img
             class="project-image"
-            src="tribute_page.png"
+            src="/images/tribute_page.png"
             alt="project"
           />
           <p class="project-title">
@@ -108,7 +133,7 @@
         >
           <img
             class="project-image"
-            src="technical_documentation.png"
+            src="/images/technical_documentation.png"
             alt="project"
           />
           <p class="project-title">
@@ -126,40 +151,48 @@
         target="_blank"
         >Show all<i class="fas fa-chevron-right"></i
       ></a>
+        </section>
+    <section id="message" class="message">
+      <h2 class="message-title">Let's debug together...</h2>
+      <div class="contact-container">
+
+        <div class="contact-links">
+          <a
+            id="profile-link"
+            href="https://github.com/Kundan696922"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/kundan-goyary/"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+          >
+          <a href="mailto:kgoyary824@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+          >
+        </div>
+
+        <form action="https://formsubmit.co/kgoyary824@gmail.com" method="POST" class="container-form">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
     </section>
 
-    <!-- END PROJECTS SECTION -->
-
-    <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let’s debug together…</h2>
-        <p>How do you take your syntax?</p>
-      </div>
-      <div class="contact-links">
-        <a
-          id="profile-link"
-          href="https://github.com/Kundan696922"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://www.linkedin.com/in/kundan-goyary/"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-        >
-        <a href="mailto:kgoyary824@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
-        >
-      </div>
-    </section>
-
-    <!-- END CONTACT SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
+    </main>
     <footer>
       <p>
         <i class="fas fa-at"></i>
@@ -169,7 +202,6 @@
         &copy; 2025 Kundan Goyary. All rights reserved.
       </p>
     </footer>
-
-    <!-- END FOOTER SECTION -->
-  <script data-cfasync="false" src=""></script></body>
+    <script src="script.js"></script>
+</body>
 </html>
