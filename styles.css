@@ -85,7 +85,7 @@ section {
 
 .home  p {
     font-size: 3rem;
-    font-weight: 200;
+    font-weight:bold;
     font-style: italic;
     color: var(--main-4);
 }
