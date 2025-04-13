@@ -327,9 +327,9 @@ section {
 
   .project-links {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-evenly;
-    padding: 1rem 0.25rem;
+    padding: 2rem 0.25rem;
     font-size: 2rem;
     text-decoration: none;
     background-color: var(--main-4);
