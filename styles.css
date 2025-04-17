@@ -25,6 +25,11 @@ body {
     position: fixed;
     width: 100%;
     z-index: 10;
+    opacity: 0.9;
+}
+
+.mobile-header {
+  display: none;
 }
 
 .topnav a {
@@ -35,11 +40,13 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.3s;
 }
 
 .topnav a:hover {
-    background-color: var(--main-2);
     color: var(--main-3);
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
 .topnav a.active {
@@ -47,14 +54,21 @@ body {
     color: var(--main-1);
 }
 
-.topnav .icon {
+.topnav a.active:hover {
+  color: var(--main-4);
+  text-decoration: underline;
+}
+
+.topnav .menu-icon {
     display: none;
 }
 
+.topnav .closebtn  {
+  display: none;
+}
 
 section {
     min-height: 100vh;
-    /* padding: 5rem 9% 5rem; */
 }
 
 .home {

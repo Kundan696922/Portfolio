@@ -19,15 +19,19 @@
     <header></header>
     <main>
     <nav class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="topnav-content"></div>
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#message">Message</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+       </div>
     </nav>
+    <div class="mobile-header">
+      <a href="#home" class="active">Home</a>
+      <span class="menu-icon" onclick="openNav()">&#9776;</span>
+    </div>
     <section id="home" class="home">
         <h1 class="home-content">Hey Iam <span class="name">Kundan</span></h1>
         <p class="home-content">A <span class="designation">Front-End</span> Developer</p>
