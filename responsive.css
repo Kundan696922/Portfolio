@@ -129,9 +129,7 @@
 
   .topnav a:hover, .topnav a:focus {
     color: var(--main-4);
-    background-color: var(--main-3);
     text-decoration: underline;
-    opacity: 0.9;
   }
 
   .topnav .closebtn {
