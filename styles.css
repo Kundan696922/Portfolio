@@ -47,7 +47,6 @@ body {
     color: var(--main-3);
     text-decoration: underline;
     transition: 0.3s;
-    opacity: 0.9;
 }
 
 .topnav a.active {
@@ -58,7 +57,6 @@ body {
 .topnav a.active:hover {
   color: var(--main-4);
   text-decoration: underline;
-  opacity: 0.9;
 }
 
 .topnav .menu-icon {
