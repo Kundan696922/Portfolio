@@ -112,6 +112,7 @@
 
   .topnav a:hover {
     color: var(--main-4);
+    background-color: transparent;
   }
 
   .topnav-content {
