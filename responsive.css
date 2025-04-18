@@ -63,7 +63,7 @@
 
       input[type=submit] {
         width: 100%;
-        font-size: 1rem;
+        font-size: 2rem;
       }
     
       .message-title {
@@ -110,6 +110,10 @@
     opacity: 0.9;
   }
 
+  .topnav a:hover {
+    color: var(--main-4);
+  }
+
   .topnav-content {
     position: relative;
     top: 25%;
@@ -127,11 +131,6 @@
     transition: 0.3s;
   }
 
-  .topnav a:hover, .topnav a:focus {
-    color: var(--main-4);
-    text-decoration: underline;
-  }
-
   .topnav .closebtn {
     display: block;
     position:absolute;
@@ -139,6 +138,7 @@
     right: 0.1rem;
     font-size: 2.5rem;
     color: var(--main-1);
+    z-index: 1;
   }
 
   .mobile-header {
@@ -172,6 +172,8 @@
 
   .menu-icon:hover {
     color: var(--main-3);
+    transition: all 0.2s ease-out;
+    transform: scale(1.5);
   }
 
   .active {
@@ -181,9 +183,10 @@
     padding: 1rem; 
   }
 
-  .active:hover {
+  .active i:hover {
     color: var(--main-4);
-    text-decoration: underline;
+    transition: all 0.2s ease-out;
+    transform: scale(1.2);
   }
   
 }
