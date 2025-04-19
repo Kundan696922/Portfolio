@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kundan Goyary</title>
+    <link rel="icon" type="image/png" href="do_logo.png">
 </head>
 <body>
     <header></header>
@@ -26,11 +27,21 @@
         <a href="#experience"><i class="fa-solid fa-briefcase nav-icon"></i> Experience</a>
         <a href="#projects"><i class="fa-solid fa-laptop-code nav-icon"></i> Projects</a>
         <a href="#message"><i class="fa-solid fa-envelope nav-icon"></i> Message</a>
+        <div class="mode hide-mode-phone">
+          <button id="modeBtn" onclick="switchMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg></button>
+            <p class="nav-name">Kundan.</p>
+          </div>
        </div>
     </nav>
     <div class="mobile-header">
       <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
       <span class="menu-icon" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+      <div class="mode">
+        <button id="modeBtn2" onclick="switchMode2()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+        </div>
+     </div>
     </div>
     <section id="home" class="home">
         <h1 class="home-content">Hey Iam <span class="name">Kundan</span></h1>
@@ -57,7 +68,7 @@
     </section>
     <section id="experience" class="experience">
         <h2 class="timeline-title">Experience</h2>
-        <h3 class="my-timeline">My Work Experience</h3>
+        <h3 class="my-timeline">My Work Experience <i class="fa-solid fa-briefcase"></i></h3>
     <div class="timeline-container">
       <div class="timeline-item left">
         <div class="timeline-dot"></div>
@@ -91,7 +102,7 @@
       <div class="projects-grid">
         <div class="project">
           <p class="project-links-title">
-            Todo App
+            <i class="fas fa-tasks project-title-logo"></i> Todo App
           </p>
       
           <img
@@ -106,7 +117,7 @@
         </div>
         <div class="project">
           <p class="project-links-title">
-            Rock Paper Scissors Game
+            <i class="fas fa-hand-rock project-title-logo"></i> Rock Paper Scissors Game
           </p>
       
           <img
@@ -121,7 +132,7 @@
         </div>
         <div class="project">
           <p class="project-links-title">
-            Tic Tac Toe Game
+            <i class="fas fa-times project-title-logo"></i> Tic Tac Toe Game
           </p>
       
           <img
@@ -137,7 +148,7 @@
 
         <div class="project">
           <p class="project-links-title">
-            Amazon Clone
+            <i class="fas fa-shopping-cart project-title-logo"></i> Amazon Clone
           </p>
       
           <img
@@ -152,7 +163,7 @@
 
         <div class="project">
           <p class="project-links-title">
-            Customer Satisfaction Survey Form
+            <i class="fas fa-poll project-title-logo"></i> Customer Satisfaction Survey Form
           </p>
       
           <img
@@ -167,7 +178,7 @@
 
         <div class="project">
           <p class="project-links-title">
-            Product Landing Page
+            <i class="fas fa-box-open project-title-logo"></i> Product Landing Page
           </p>
       
           <img

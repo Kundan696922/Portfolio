@@ -54,9 +54,10 @@
         width: 80%;
       }
 
-      .project-title {
-        font-size: 1.6rem;
+      .project-links-title {
+        font-size: 1.7rem;
       }
+
       .btn-show-all {
         font-size: 1.5rem;
       }
@@ -190,4 +191,10 @@
     transform: scale(1.2);
   }
   
+  .mode button {
+    float: right;
+  }
+  .hide-mode-phone {
+    display: none;
+  }
 }
