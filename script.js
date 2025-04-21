@@ -58,3 +58,21 @@ function openNav() {
     const btnIcon = document.getElementById("modeBtn2");
     btnIcon.innerHTML = modes[current].icon;
   }
+
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const element = entry.target;
+      
+      if (entry.isIntersecting) {
+        element.classList.remove('animate'); // Reset
+        void element.offsetWidth;           // Force reflow
+        element.classList.add('animate');   // Trigger
+      } else {
+        element.classList.remove('animate'); // Remove when out of view
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  // Observe all elements with the .scroll-effect class
+  document.querySelectorAll('.scroll-effect').forEach(el => observer.observe(el));
